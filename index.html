@@ -1,0 +1,1121 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Коммерческое предложение — Хорошие экраны</title>
+
+    <!-- Tailwind через CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ["system-ui", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      /* Плавный тач-скролл для карточек */
+      .scroll-touch {
+        -webkit-overflow-scrolling: touch;
+      }
+    </style>
+  </head>
+  <body class="bg-slate-50 text-slate-900 antialiased">
+    <div class="min-h-screen font-sans">
+      <!-- HERO-БЛОК: фиолетово-розовый градиент -->
+      <section
+        class="relative overflow-hidden text-white bg-gradient-to-br from-[#5b3fff] via-[#a855f7] to-[#ff4b9b]"
+      >
+        <!-- Лёгкое затемнение для читаемости текста -->
+        <div class="pointer-events-none absolute inset-0 bg-slate-950/25"></div>
+
+        <div
+          class="relative mx-auto flex min-h-[55vh] max-w-6xl flex-col px-4 pt-6 pb-12 sm:px-6 lg:px-8 lg:pb-16 lg:pt-8"
+        >
+          <!-- Логотип + телефон -->
+          <header class="flex items-center justify-between gap-4">
+            <div class="flex items-center gap-3">
+              <img
+                src="https://static.tildacdn.com/tild6536-3238-4536-a663-316339363061/gs-white-rgb-1.png"
+                alt="Хорошие экраны"
+                class="h-14 w-auto"
+              />
+            </div>
+            <a
+              href="tel:+7XXXXXXXXXX"
+              class="hidden items-center gap-2 rounded-full bg-white/10 px-4 py-1.5 text-[12px] font-medium text-slate-50/95 backdrop-blur sm:flex"
+            >
+              <span
+                class="inline-flex h-6 w-6 items-center justify-center rounded-full bg-white/15 text-[13px]"
+              >
+                ☎
+              </span>
+              <span>+7 (XXX) XXX-XX-XX</span>
+            </a>
+          </header>
+
+          <!-- Центрированный контент -->
+          <div class="flex flex-1 items-center">
+            <div class="mt-4 max-w-3xl space-y-4 md:mt-6">
+              <div
+                class="inline-flex items-center gap-2 rounded-full bg-white/10 px-3 py-1 text-[11px] uppercase tracking-wide text-fuchsia-50/90 backdrop-blur"
+              >
+                <span class="h-1.5 w-1.5 rounded-full bg-fuchsia-300"></span>
+                <span>LED-решения для бизнеса</span>
+              </div>
+
+              <h1
+                class="text-3xl font-semibold tracking-tight sm:text-4xl lg:text-[2.6rem]"
+              >
+                Коммерческое предложение
+              </h1>
+
+              <p class="max-w-xl text-sm leading-relaxed text-fuchsia-50/90">
+                Индивидуальное коммерческое предложение на поставку и монтаж
+                светодиодных экранов для вашего объекта.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- БЛОК 2: Менеджер -->
+      <section class="relative z-10 -mt-10 sm:-mt-14 lg:-mt-16 mb-10">
+        <div class="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <div
+            class="rounded-3xl border border-slate-100 bg-white/95 p-6 shadow-2xl shadow-slate-300/70 backdrop-blur-sm sm:p-7"
+          >
+            <div class="flex flex-col gap-4 sm:flex-row sm:items-start">
+              <!-- Аватар -->
+              <div class="shrink-0">
+                <div
+                  class="flex h-14 w-14 items-center justify-center rounded-full bg-gradient-to-br from-purple-500 to-fuchsia-500 text-sm font-semibold text-white"
+                >
+                  ИП
+                </div>
+              </div>
+
+              <!-- Текст -->
+              <div class="flex-1 space-y-2">
+                <div>
+                  <div class="text-sm font-semibold text-slate-900">
+                    Иван Петров
+                  </div>
+                  <div class="text-xs text-slate-500">
+                    Менеджер по работе с клиентами
+                  </div>
+                </div>
+                <p class="text-sm leading-relaxed text-slate-600">
+                  Добрый день! На основе ваших исходных данных мы подготовили
+                  персональное коммерческое предложение по LED-экрану. Ниже вы
+                  можете перейти к разделам с составом КП, детальными расчётами
+                  и примерами наших проектов. При необходимости мы быстро
+                  пересчитаем дополнительные варианты под вашу задачу.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Данные КП + В этом предложении -->
+      <section class="bg-white">
+        <div
+          class="mx-auto max-w-6xl px-4 pb-10 sm:px-6 sm:pb-12 lg:px-8"
+        >
+          <div
+            class="grid gap-4 text-sm text-slate-800 sm:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)]"
+          >
+            <!-- Данные коммерческого предложения -->
+            <div
+              class="rounded-2xl border border-slate-100 bg-slate-50/80 px-5 py-4 sm:py-5"
+            >
+              <div
+                class="text-[11px] font-semibold uppercase tracking-wide text-slate-500"
+              >
+                Данные коммерческого предложения
+              </div>
+              <dl
+                class="mt-3 grid gap-y-2 text-sm sm:grid-cols-2 sm:gap-4"
+              >
+                <div>
+                  <dt class="text-[11px] uppercase text-slate-400">
+                    Дата
+                  </dt>
+                  <dd class="mt-0.5 font-medium text-slate-900">
+                    04.12.2025
+                  </dd>
+                </div>
+                <div>
+                  <dt class="text-[11px] uppercase text-slate-400">
+                    Номер КП
+                  </dt>
+                  <dd class="mt-0.5 font-medium text-slate-900">
+                    КП-2025/12-01
+                  </dd>
+                </div>
+                <div class="sm:col-span-2">
+                  <dt class="text-[11px] uppercase text-slate-400">
+                    Название КП
+                  </dt>
+                  <dd class="mt-0.5 font-medium text-slate-900">
+                    Поставка и монтаж LED-экрана для фасада ТЦ «Город»
+                  </dd>
+                </div>
+              </dl>
+            </div>
+
+            <!-- В этом предложении -->
+            <div
+              class="rounded-2xl border border-slate-100 bg-slate-50/80 px-5 py-4 sm:py-5"
+            >
+              <div
+                class="text-[11px] font-semibold uppercase tracking-wide text-slate-500"
+              >
+                В этом предложении
+              </div>
+              <ul class="mt-3 space-y-1.5 text-[13px]">
+                <li class="flex items-start gap-2">
+                  <span
+                    class="mt-[6px] h-1.5 w-1.5 rounded-full bg-purple-400"
+                  ></span>
+                  <span>Несколько вариантов конфигураций LED-экрана</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span
+                    class="mt-[6px] h-1.5 w-1.5 rounded-full bg-purple-400"
+                  ></span>
+                  <span>Подробные технические характеристики</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span
+                    class="mt-[6px] h-1.5 w-1.5 rounded-full bg-purple-400"
+                  ></span>
+                  <span>Расчёт стоимости и сроков реализации</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span
+                    class="mt-[6px] h-1.5 w-1.5 rounded-full bg-purple-400"
+                  ></span>
+                  <span>Примеры реализованных проектов компании</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Состав КП -->
+      <section class="bg-white">
+        <div
+          class="mx-auto max-w-6xl px-4 pb-12 pt-2 sm:px-6 sm:pt-4 lg:px-8"
+        >
+          <div class="mb-4 flex items-end justify-between gap-3">
+            <div>
+              <h2 class="text-base font-semibold text-slate-900 sm:text-lg">
+                Состав коммерческого предложения
+              </h2>
+              <p class="text-xs text-slate-500 sm:text-sm">
+                Нажмите на нужный раздел, чтобы перейти к соответствующему
+                блоку на странице.
+              </p>
+            </div>
+          </div>
+
+          <nav
+            class="grid gap-2 text-sm sm:grid-cols-2 lg:grid-cols-3 lg:gap-3"
+          >
+            <a
+              href="#calculations"
+              class="group flex items-center justify-between gap-3 rounded-2xl border border-slate-100 bg-slate-50/70 px-4 py-3 text-slate-800 transition hover:border-purple-200 hover:bg-purple-50/60"
+            >
+              <div>
+                <div
+                  class="text-xs font-semibold uppercase text-purple-500 group-hover:text-fuchsia-500"
+                >
+                  01
+                </div>
+                <div class="text-sm font-semibold">
+                  Варианты LED-экранов и расчёты
+                </div>
+                <div class="mt-1 text-xs text-slate-500">
+                  Сравнение по типу, шагу пикселя и стоимости
+                </div>
+              </div>
+              <span
+                class="text-lg text-slate-400 transition group-hover:text-purple-500"
+              >
+                →
+              </span>
+            </a>
+
+            <a
+              href="#projects"
+              class="group flex items-center justify-between gap-3 rounded-2xl border border-slate-100 bg-slate-50/70 px-4 py-3 text-slate-800 transition hover:border-purple-200 hover:bg-purple-50/60"
+            >
+              <div>
+                <div
+                  class="text-xs font-semibold uppercase text-purple-500 group-hover:text-fuchsia-500"
+                >
+                  02
+                </div>
+                <div class="text-sm font-semibold">
+                  Реализованные проекты
+                </div>
+                <div class="mt-1 text-xs text-slate-500">
+                  Фотографии и краткие описания объектов
+                </div>
+              </div>
+              <span
+                class="text-lg text-slate-400 transition group-hover:text-purple-500"
+              >
+                →
+              </span>
+            </a>
+
+            <a
+              href="#terms"
+              class="group flex items-center justify-between gap-3 rounded-2xl border border-slate-100 bg-slate-50/70 px-4 py-3 text-slate-800 transition hover:border-purple-200 hover:bg-purple-50/60"
+            >
+              <div>
+                <div
+                  class="text-xs font-semibold uppercase text-purple-500 group-hover:text-fuchsia-500"
+                >
+                  03
+                </div>
+                <div class="text-sm font-semibold">
+                  Условия, сроки, сервис
+                </div>
+                <div class="mt-1 text-xs text-slate-500">
+                  Поставка, монтаж, гарантия и сопровождение
+                </div>
+              </div>
+              <span
+                class="text-lg text-slate-400 transition group-hover:text-purple-500"
+              >
+                →
+              </span>
+            </a>
+          </nav>
+        </div>
+      </section>
+
+      <!-- БЛОК С РАСЧЁТАМИ: горизонтальные карточки + скролл + стрелки -->
+      <section id="calculations" class="py-14 bg-slate-50/70">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div class="mb-6 flex flex-col gap-3 sm:flex-row sm:items-end">
+            <div class="flex-1">
+              <h2 class="text-lg font-semibold text-slate-900 sm:text-xl">
+                Варианты LED-экранов и расчёты
+              </h2>
+              <p class="mt-1 text-xs text-slate-500 sm:text-sm">
+                Листайте варианты свайпом или с помощью стрелок. Нажмите на
+                нужный — ниже отобразится подробный расчёт по смете и параметрам
+                экрана.
+              </p>
+            </div>
+            <div class="text-xs text-slate-500">
+              *Цены примерные — замените на реальные.
+            </div>
+          </div>
+
+          <!-- Горизонтальный ряд карточек (табы) + стрелки -->
+          <div class="relative mb-6 -mx-4 sm:mx-0">
+            <!-- левая кнопка -->
+            <button
+              type="button"
+              class="calc-scroll-left hidden sm:flex absolute left-1 top-1/2 z-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 px-2.5 py-2 text-slate-500 shadow-md ring-1 ring-slate-200 hover:text-purple-600 hover:ring-purple-200"
+            >
+              ‹
+            </button>
+
+            <div
+              id="calcTabsScroll"
+              class="overflow-x-auto scroll-touch"
+            >
+              <div
+                class="flex min-w-max gap-2.5 px-4 pb-3 pt-1 sm:px-3 sm:py-3"
+              >
+                <!-- TAB 1 -->
+                <button
+                  class="calc-tab group flex min-w-[190px] max-w-[190px] flex-col rounded-2xl border border-purple-500/70 bg-white/90 px-3 py-3 text-left text-xs text-slate-800 shadow-sm ring-2 ring-purple-500/25"
+                  data-tab-target="calc-1"
+                >
+                  <div class="flex items-center justify-between gap-2">
+                    <span
+                      class="rounded-full bg-purple-500/10 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-purple-600"
+                      >Фасад</span
+                    >
+                    <span
+                      class="rounded-full bg-emerald-500/10 px-2 py-0.5 text-[10px] font-semibold text-emerald-600"
+                      >Рекомендуемое</span
+                    >
+                  </div>
+                  <div
+                    class="mt-2 text-[10px] font-semibold uppercase tracking-wide text-slate-500"
+                  >
+                    P4 · 3×5 м · уличный
+                  </div>
+                  <div class="mt-1 text-[11px] text-slate-500">
+                    Шаг пикселя: <span class="font-medium text-slate-800">4 мм</span>
+                  </div>
+                  <div class="mt-3 text-[10px] uppercase text-slate-400">
+                    Итоговая стоимость
+                  </div>
+                  <div
+                    class="text-sm font-semibold bg-gradient-to-r from-purple-600 to-fuchsia-500 bg-clip-text text-transparent"
+                  >
+                    1 250 000 ₽
+                  </div>
+                </button>
+
+                <!-- TAB 2 -->
+                <button
+                  class="calc-tab group flex min-w-[190px] max-w-[190px] flex-col rounded-2xl border border-slate-200 bg-white/80 px-3 py-3 text-left text-xs text-slate-800 shadow-sm"
+                  data-tab-target="calc-2"
+                >
+                  <div class="flex items-center justify-between gap-2">
+                    <span
+                      class="rounded-full bg-purple-500/10 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-purple-600"
+                      >Интерьер</span
+                    >
+                  </div>
+                  <div
+                    class="mt-2 text-[10px] font-semibold uppercase tracking-wide text-slate-500"
+                  >
+                    P2.5 · 2×3 м
+                  </div>
+                  <div class="mt-1 text-[11px] text-slate-500">
+                    Шаг пикселя: <span class="font-medium text-slate-800">2.5 мм</span>
+                  </div>
+                  <div class="mt-3 text-[10px] uppercase text-slate-400">
+                    Итоговая стоимость
+                  </div>
+                  <div
+                    class="text-sm font-semibold bg-gradient-to-r from-purple-600 to-fuchsia-500 bg-clip-text text-transparent"
+                  >
+                    890 000 ₽
+                  </div>
+                </button>
+
+                <!-- TAB 3 -->
+                <button
+                  class="calc-tab group flex min-w-[190px] max-w-[190px] flex-col rounded-2xl border border-slate-200 bg-white/80 px-3 py-3 text-left text-xs text-slate-800 shadow-sm"
+                  data-tab-target="calc-3"
+                >
+                  <div class="flex items-center justify-between gap-2">
+                    <span
+                      class="rounded-full bg-purple-500/10 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-purple-600"
+                      >Фасад</span
+                    >
+                  </div>
+                  <div
+                    class="mt-2 text-[10px] font-semibold uppercase tracking-wide text-slate-500"
+                  >
+                    P6 · 4×8 м
+                  </div>
+                  <div class="mt-1 text-[11px] text-slate-500">
+                    Шаг пикселя: <span class="font-medium text-slate-800">6 мм</span>
+                  </div>
+                  <div class="mt-3 text-[10px] uppercase text-slate-400">
+                    Итоговая стоимость
+                  </div>
+                  <div
+                    class="text-sm font-semibold bg-gradient-to-r from-purple-600 to-fuchsia-500 bg-clip-text text-transparent"
+                  >
+                    1 950 000 ₽
+                  </div>
+                </button>
+
+                <!-- TAB 4 -->
+                <button
+                  class="calc-tab group flex min-w-[190px] max-w-[190px] flex-col rounded-2xl border border-slate-200 bg-white/80 px-3 py-3 text-left text-xs text-slate-800 shadow-sm"
+                  data-tab-target="calc-4"
+                >
+                  <div class="flex items-center justify-between gap-2">
+                    <span
+                      class="rounded-full bg-purple-500/10 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-purple-600"
+                      >Интерьер</span
+                    >
+                    <span
+                      class="rounded-full bg-emerald-500/10 px-2 py-0.5 text-[10px] font-semibold text-emerald-600"
+                      >Рекомендуемое</span
+                    >
+                  </div>
+                  <div
+                    class="mt-2 text-[10px] font-semibold uppercase tracking-wide text-slate-500"
+                  >
+                    P1.8 · 1.5×2.5 м
+                  </div>
+                  <div class="mt-1 text-[11px] text-slate-500">
+                    Шаг пикселя: <span class="font-medium text-slate-800">1.8 мм</span>
+                  </div>
+                  <div class="mt-3 text-[10px] uppercase text-slate-400">
+                    Итоговая стоимость
+                  </div>
+                  <div
+                    class="text-sm font-semibold bg-gradient-to-r from-purple-600 to-fuchsia-500 bg-clip-text text-transparent"
+                  >
+                    960 000 ₽
+                  </div>
+                </button>
+
+                <!-- TAB 5 -->
+                <button
+                  class="calc-tab group flex min-w-[190px] max-w-[190px] flex-col rounded-2xl border border-slate-200 bg-white/80 px-3 py-3 text-left text-xs text-slate-800 shadow-sm"
+                  data-tab-target="calc-5"
+                >
+                  <div class="flex items-center justify-between gap-2">
+                    <span
+                      class="rounded-full bg-purple-500/10 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-purple-600"
+                      >Фасад</span
+                    >
+                  </div>
+                  <div
+                    class="mt-2 text-[10px] font-semibold uppercase tracking-wide text-slate-500"
+                  >
+                    P8 · 5×10 м
+                  </div>
+                  <div class="mt-1 text-[11px] text-slate-500">
+                    Шаг пикселя: <span class="font-medium text-slate-800">8 мм</span>
+                  </div>
+                  <div class="mt-3 text-[10px] uppercase text-slate-400">
+                    Итоговая стоимость
+                  </div>
+                  <div
+                    class="text-sm font-semibold bg-gradient-to-r from-purple-600 to-fuchsia-500 bg-clip-text text-transparent"
+                  >
+                    2 450 000 ₽
+                  </div>
+                </button>
+
+                <!-- TAB 6 -->
+                <button
+                  class="calc-tab group flex min-w-[190px] max-w-[190px] flex-col rounded-2xl border border-slate-200 bg-white/80 px-3 py-3 text-left text-xs text-slate-800 shadow-sm"
+                  data-tab-target="calc-6"
+                >
+                  <div class="flex items-center justify-between gap-2">
+                    <span
+                      class="rounded-full bg-purple-500/10 px-2 py-0.5 text-[10px] font-semibold uppercase tracking-wide text-purple-600"
+                      >Интерьер</span
+                    >
+                  </div>
+                  <div
+                    class="mt-2 text-[10px] font-semibold uppercase tracking-wide text-slate-500"
+                  >
+                    P3 · 3×4 м
+                  </div>
+                  <div class="mt-1 text-[11px] text-slate-500">
+                    Шаг пикселя: <span class="font-medium text-slate-800">3 мм</span>
+                  </div>
+                  <div class="mt-3 text-[10px] uppercase text-slate-400">
+                    Итоговая стоимость
+                  </div>
+                  <div
+                    class="text-sm font-semibold bg-gradient-to-r from-purple-600 to-fuchsia-500 bg-clip-text text-transparent"
+                  >
+                    780 000 ₽
+                  </div>
+                </button>
+              </div>
+            </div>
+
+            <!-- правая кнопка -->
+            <button
+              type="button"
+              class="calc-scroll-right hidden sm:flex absolute right-1 top-1/2 z-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 px-2.5 py-2 text-slate-500 shadow-md ring-1 ring-slate-200 hover:text-purple-600 hover:ring-purple-200"
+            >
+              ›
+            </button>
+          </div>
+
+          <!-- Контент табов (сметы) -->
+          <div class="space-y-4">
+            <!-- calc-1 -->
+            <div
+              id="calc-1"
+              class="calc-panel rounded-3xl border border-purple-100 bg-white/95 p-5 sm:p-6"
+            >
+              <div
+                class="mb-4 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between"
+              >
+                <div>
+                  <div
+                    class="text-xs font-semibold uppercase tracking-wide text-purple-500"
+                  >
+                    Вариант 1 · Фасадный LED-экран
+                  </div>
+                  <h3 class="text-sm font-semibold text-slate-900 sm:text-base">
+                    Уличный экран P4, 3×5 м для фасада ТЦ
+                  </h3>
+                </div>
+                <div class="text-right text-sm">
+                  <div class="text-[11px] uppercase text-slate-400">
+                    Итоговая стоимость
+                  </div>
+                  <div
+                    class="text-lg font-semibold bg-gradient-to-r from-purple-600 to-fuchsia-500 bg-clip-text text-transparent"
+                  >
+                    1 250 000 ₽
+                  </div>
+                  <div class="text-[11px] text-slate-500">
+                    с НДС, монтаж включён
+                  </div>
+                </div>
+              </div>
+
+              <!-- Цветная плашка с кратким итогом -->
+              <div
+                class="mb-4 rounded-2xl bg-gradient-to-r from-purple-600/90 to-fuchsia-500/90 px-4 py-3 text-xs text-fuchsia-50 sm:text-sm"
+              >
+                <div class="flex flex-wrap items-center justify-between gap-2">
+                  <div>
+                    <div class="text-[11px] uppercase tracking-wide opacity-80">
+                      Итог по смете
+                    </div>
+                    <div class="text-sm font-semibold">
+                      Экран 3×5 м, шаг 4 мм, фасадный, «под ключ»
+                    </div>
+                  </div>
+                  <div class="text-right">
+                    <div class="text-[11px] opacity-80">Срок поставки</div>
+                    <div class="text-sm font-semibold">до 21 дня</div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="grid gap-4 text-xs text-slate-700 sm:grid-cols-[minmax(0,1.2fr)_minmax(0,1fr)] sm:text-sm"
+              >
+                <div>
+                  <h4 class="mb-2 text-xs font-semibold uppercase text-slate-500">
+                    Технические параметры
+                  </h4>
+                  <div class="overflow-hidden rounded-2xl border border-slate-100">
+                    <table class="min-w-full text-xs sm:text-sm">
+                      <tbody class="divide-y divide-slate-100 bg-white">
+                        <tr>
+                          <td class="px-3 py-2 text-slate-500">Тип экрана</td>
+                          <td class="px-3 py-2 font-medium text-slate-900">
+                            Уличный, полноцветный LED
+                          </td>
+                        </tr>
+                        <tr class="bg-slate-50/60">
+                          <td class="px-3 py-2 text-slate-500">
+                            Размер экрана
+                          </td>
+                          <td class="px-3 py-2 font-medium text-slate-900">
+                            3 × 5 м (15 м²)
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="px-3 py-2 text-slate-500">Шаг пикселя</td>
+                          <td class="px-3 py-2 font-medium text-slate-900">
+                            4 мм
+                          </td>
+                        </tr>
+                        <tr class="bg-slate-50/60">
+                          <td class="px-3 py-2 text-slate-500">
+                            Разрешение
+                          </td>
+                          <td class="px-3 py-2 font-medium text-slate-900">
+                            750 × 450 px
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class="px-3 py-2 text-slate-500">Яркость</td>
+                          <td class="px-3 py-2 font-medium text-slate-900">
+                            до 6 000 кд/м²
+                          </td>
+                        </tr>
+                        <tr class="bg-slate-50/60">
+                          <td class="px-3 py-2 text-slate-500">
+                            Степень защиты
+                          </td>
+                          <td class="px-3 py-2 font-medium text-slate-900">
+                            IP65 (фронтальная), IP54 (тыльная)
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+
+                <div class="space-y-4">
+                  <div>
+                    <h4
+                      class="mb-2 text-xs font-semibold uppercase text-slate-500"
+                    >
+                      Структура стоимости
+                    </h4>
+                    <div
+                      class="overflow-hidden rounded-2xl border border-slate-100 bg-white"
+                    >
+                      <table class="min-w-full text-xs sm:text-sm">
+                        <tbody class="divide-y divide-slate-100">
+                          <tr>
+                            <td class="px-3 py-2 text-slate-500">
+                              LED-модули, cabinets
+                            </td>
+                            <td class="px-3 py-2 text-right font-medium">
+                              850 000 ₽
+                            </td>
+                          </tr>
+                          <tr class="bg-slate-50/60">
+                            <td class="px-3 py-2 text-slate-500">
+                              Система управления
+                            </td>
+                            <td class="px-3 py-2 text-right font-medium">
+                              90 000 ₽
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="px-3 py-2 text-slate-500">
+                              Металлоконструкция
+                            </td>
+                            <td class="px-3 py-2 text-right font-medium">
+                              160 000 ₽
+                            </td>
+                          </tr>
+                          <tr class="bg-slate-50/60">
+                            <td class="px-3 py-2 text-slate-500">
+                              Монтаж и пуско-наладка
+                            </td>
+                            <td class="px-3 py-2 text-right font-medium">
+                              120 000 ₽
+                            </td>
+                          </tr>
+                          <tr>
+                            <td class="px-3 py-2 text-slate-500">
+                              Логистика и крепёж
+                            </td>
+                            <td class="px-3 py-2 text-right font-medium">
+                              30 000 ₽
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+
+                  <div>
+                    <h4
+                      class="mb-2 text-xs font-semibold uppercase text-slate-500"
+                    >
+                      Включено в стоимость
+                    </h4>
+                    <ul class="space-y-1.5 text-xs sm:text-sm">
+                      <li class="flex gap-2">
+                        <span
+                          class="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-500"
+                        ></span>
+                        <span>Проектирование конструкции и схем подключения</span>
+                      </li>
+                      <li class="flex gap-2">
+                        <span
+                          class="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-500"
+                        ></span>
+                        <span>Поставка оборудования и монтаж «под ключ»</span>
+                      </li>
+                      <li class="flex gap-2">
+                        <span
+                          class="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-500"
+                        ></span>
+                        <span>Настройка яркости, цветопередачи, расписаний</span>
+                      </li>
+                      <li class="flex gap-2">
+                        <span
+                          class="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-500"
+                        ></span>
+                        <span>Обучение персонала работе с ПО</span>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- calc-2 -->
+            <div
+              id="calc-2"
+              class="calc-panel hidden rounded-3xl border border-slate-100 bg-white/95 p-5 sm:p-6"
+            >
+              <div
+                class="mb-3 text-xs font-semibold uppercase tracking-wide text-purple-500"
+              >
+                Вариант 2 · Интерьерный LED-экран
+              </div>
+              <h3 class="mb-2 text-sm font-semibold text-slate-900 sm:text-base">
+                Интерьерный экран P2.5, 2×3 м для холла/вестибюля
+              </h3>
+              <p class="text-xs text-slate-600 sm:text-sm">
+                Вариант подходит для холлов, ресепшенов и интерьерных зон с
+                небольшим расстоянием просмотра. Яркость до 1 200 кд/м²,
+                аккуратная картинка и комфортный просмотр.
+              </p>
+            </div>
+
+            <!-- calc-3 -->
+            <div
+              id="calc-3"
+              class="calc-panel hidden rounded-3xl border border-slate-100 bg-white/95 p-5 sm:p-6"
+            >
+              <h3 class="mb-2 text-sm font-semibold text-slate-900 sm:text-base">
+                Вариант 3 · Фасадный LED-экран P6, 4×8 м
+              </h3>
+              <p class="text-xs text-slate-600 sm:text-sm">
+                Крупноформатное решение для фасадов и уличных конструкций с
+                большой дистанцией просмотра (25–30 м и более).
+              </p>
+            </div>
+
+            <!-- calc-4 -->
+            <div
+              id="calc-4"
+              class="calc-panel hidden rounded-3xl border border-slate-100 bg-white/95 p-5 sm:p-6"
+            >
+              <h3 class="mb-2 text-sm font-semibold text-slate-900 sm:text-base">
+                Вариант 4 · Интерьерный LED-экран P1.8, 1.5×2.5 м
+              </h3>
+              <p class="text-xs text-slate-600 sm:text-sm">
+                Премиальное решение для переговорных, VIP-зон и презентационных
+                пространств, где важна максимальная чёткость картинки.
+              </p>
+            </div>
+
+            <!-- calc-5 -->
+            <div
+              id="calc-5"
+              class="calc-panel hidden rounded-3xl border border-slate-100 bg-white/95 p-5 sm:p-6"
+            >
+              <h3 class="mb-2 text-sm font-semibold text-slate-900 sm:text-base">
+                Вариант 5 · Фасадный LED-экран P8, 5×10 м
+              </h3>
+              <p class="text-xs text-slate-600 sm:text-sm">
+                Экономически эффективный вариант для крупного рекламного
+                формата вдоль магистралей и трасс.
+              </p>
+            </div>
+
+            <!-- calc-6 -->
+            <div
+              id="calc-6"
+              class="calc-panel hidden rounded-3xl border border-slate-100 bg-white/95 p-5 sm:p-6"
+            >
+              <h3 class="mb-2 text-sm font-semibold text-slate-900 sm:text-base">
+                Вариант 6 · Интерьерный LED-экран P3, 3×4 м
+              </h3>
+              <p class="text-xs text-slate-600 sm:text-sm">
+                Оптимальное решение для конференц-залов и учебных аудиторий, где
+                важна хорошая читаемость текста и графиков.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- БЛОК ПРОЕКТОВ -->
+      <section id="projects" class="py-14 bg-white">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div class="mb-6 flex flex-col gap-3 sm:flex-row sm:items-end">
+            <div class="flex-1">
+              <h2 class="text-lg font-semibold text-slate-900 sm:text-xl">
+                Реализованные проекты
+              </h2>
+              <p class="mt-1 text-xs text-slate-500 sm:text-sm">
+                Ниже — примеры установленных экранов. Вы можете заменить
+                изображения на реальные фотографии и скорректировать подписи.
+              </p>
+            </div>
+          </div>
+
+          <div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+            <article
+              class="flex h-full flex-col overflow-hidden rounded-3xl border border-slate-100 bg-slate-50/80"
+            >
+              <div class="relative aspect-[4/3] overflow-hidden">
+                <img
+                  src="https://via.placeholder.com/800x600?text=Фасадный+LED+экран"
+                  alt="Фасадный LED-экран на ТЦ"
+                  class="h-full w-full object-cover"
+                />
+              </div>
+              <div class="flex flex-1 flex-col px-4 py-3 sm:px-5 sm:py-4">
+                <h3 class="text-sm font-semibold text-slate-900">
+                  Фасадный LED-экран на ТЦ «Город»
+                </h3>
+                <p class="mt-1 text-xs text-slate-500">
+                  Уличный экран P4, 3×6 м. Транслирует рекламный контент и
+                  навигацию по торговому центру.
+                </p>
+                <div class="mt-2 flex flex-wrap gap-2 text-[11px]">
+                  <span
+                    class="rounded-full bg-purple-500/10 px-2 py-0.5 text-purple-600"
+                    >Фасад</span
+                  >
+                  <span
+                    class="rounded-full bg-slate-900/5 px-2 py-0.5 text-slate-600"
+                    >P4</span
+                  >
+                  <span
+                    class="rounded-full bg-slate-900/5 px-2 py-0.5 text-slate-600"
+                    >3×6 м</span
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="flex h-full flex-col overflow-hidden rounded-3xl border border-slate-100 bg-slate-50/80"
+            >
+              <div class="relative aspect-[4/3] overflow-hidden">
+                <img
+                  src="https://via.placeholder.com/800x600?text=Интерьерный+LED+экран"
+                  alt="Интерьерный LED-экран в холле бизнес-центра"
+                  class="h-full w-full object-cover"
+                />
+              </div>
+              <div class="flex flex-1 flex-col px-4 py-3 sm:px-5 sm:py-4">
+                <h3 class="text-sm font-semibold text-slate-900">
+                  Интерьерный экран в холле бизнес-центра
+                </h3>
+                <p class="mt-1 text-xs text-slate-500">
+                  P2.5, 2×3 м. Используется для приветственных роликов и
+                  информационных сообщений.
+                </p>
+                <div class="mt-2 flex flex-wrap gap-2 text-[11px]">
+                  <span
+                    class="rounded-full bg-purple-500/10 px-2 py-0.5 text-purple-600"
+                    >Интерьер</span
+                  >
+                  <span
+                    class="rounded-full bg-slate-900/5 px-2 py-0.5 text-slate-600"
+                    >P2.5</span
+                  >
+                  <span
+                    class="rounded-full bg-slate-900/5 px-2 py-0.5 text-slate-600"
+                    >2×3 м</span
+                  >
+                </div>
+              </div>
+            </article>
+
+            <article
+              class="flex h-full flex-col overflow-hidden rounded-3xl border border-slate-100 bg-slate-50/80"
+            >
+              <div class="relative aspect-[4/3] overflow-hidden">
+                <img
+                  src="https://via.placeholder.com/800x600?text=Экран+на+стадионе"
+                  alt="LED-экран на стадионе"
+                  class="h-full w-full object-cover"
+                />
+              </div>
+              <div class="flex flex-1 flex-col px-4 py-3 sm:px-5 sm:py-4">
+                <h3 class="text-sm font-semibold text-slate-900">
+                  LED-экран на спортивной арене
+                </h3>
+                <p class="mt-1 text-xs text-slate-500">
+                  Крупноформатный экран P6, 4×8 м для трансляции матчей,
+                  повторов и рекламы.
+                </p>
+                <div class="mt-2 flex flex-wrap gap-2 text-[11px]">
+                  <span
+                    class="rounded-full bg-purple-500/10 px-2 py-0.5 text-purple-600"
+                    >Спорт</span
+                  >
+                  <span
+                    class="rounded-full bg-slate-900/5 px-2 py-0.5 text-slate-600"
+                    >P6</span
+                  >
+                  <span
+                    class="rounded-full bg-slate-900/5 px-2 py-0.5 text-slate-600"
+                    >4×8 м</span
+                  >
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- БЛОК УСЛОВИЙ -->
+      <section id="terms" class="py-14 bg-slate-50/70">
+        <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+          <div class="mb-6 flex flex-col gap-3 sm:flex-row sm:items-end">
+            <div class="flex-1">
+              <h2 class="text-lg font-semibold text-slate-900 sm:text-xl">
+                Условия, сроки и сервис
+              </h2>
+              <p class="mt-1 text-xs text-slate-500 sm:text-sm">
+                Базовые условия поставки, монтажа и гарантийного обслуживания.
+              </p>
+            </div>
+          </div>
+
+          <div class="grid gap-4 sm:grid-cols-3">
+            <div
+              class="flex flex-col rounded-3xl border border-slate-100 bg-white/95 p-5"
+            >
+              <h3 class="text-sm font-semibold text-slate-900">
+                Сроки реализации
+              </h3>
+              <ul class="mt-3 space-y-1.5 text-xs text-slate-600 sm:text-sm">
+                <li>
+                  • Согласование ТЗ и КП:
+                  <span class="font-medium text-slate-900">1–3 дня</span>
+                </li>
+                <li>
+                  • Производство и поставка:
+                  <span class="font-medium text-slate-900">10–21 день</span>
+                </li>
+                <li>
+                  • Монтаж и пуско-наладка:
+                  <span class="font-medium text-slate-900">3–7 дней</span>
+                </li>
+              </ul>
+            </div>
+
+            <div
+              class="flex flex-col rounded-3xl border border-slate-100 bg-white/95 p-5"
+            >
+              <h3 class="text-sm font-semibold text-slate-900">
+                Поставка и монтаж
+              </h3>
+              <ul class="mt-3 space-y-1.5 text-xs text-slate-600 sm:text-sm">
+                <li>• Поставка оборудования до объекта включена.</li>
+                <li>• Монтаж выполняет сертифицированная бригада.</li>
+                <li>• Необходимость спецтехники согласуется отдельно.</li>
+                <li>• Питание и слаботочка — со стороны заказчика по ТЗ.</li>
+              </ul>
+            </div>
+
+            <div
+              class="flex flex-col rounded-3xl border border-slate-100 bg-white/95 p-5"
+            >
+              <h3 class="text-sm font-semibold text-slate-900">
+                Гарантия и сервис
+              </h3>
+              <ul class="mt-3 space-y-1.5 text-xs text-slate-600 sm:text-sm">
+                <li>
+                  • Гарантия на оборудование:
+                  <span class="font-medium text-slate-900">24 месяца</span>.
+                </li>
+                <li>• Опция расширенной гарантии до 36–60 месяцев.</li>
+                <li>• Регламентные выезды сервиса по графику.</li>
+                <li>• Поддержка по телефону и онлайн.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ПОДВАЛ -->
+      <footer class="border-t border-slate-100 bg-white/90">
+        <div class="mx-auto max-w-6xl px-4 py-8 sm:px-6 lg:px-8">
+          <div
+            class="flex flex-col gap-4 text-xs text-slate-500 sm:flex-row sm:items-center sm:justify-between"
+          >
+            <div>
+              © 2025 · Компания «Хорошие экраны». Все права защищены.
+            </div>
+            <div class="flex flex-wrap items-center gap-3">
+              <span class="font-semibold text-slate-700">Телефон:</span>
+              <a href="tel:+7XXXXXXXXXX" class="hover:text-purple-600">
+                +7 (XXX) XXX-XX-XX
+              </a>
+              <span class="h-1 w-1 rounded-full bg-slate-300"></span>
+              <span class="font-semibold text-slate-700">Email:</span>
+              <a
+                href="mailto:info@good-screens.ru"
+                class="hover:text-purple-600"
+              >
+                info@good-screens.ru
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- JS: табы + стрелки скролла -->
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const tabs = document.querySelectorAll(".calc-tab");
+        const panels = document.querySelectorAll(".calc-panel");
+
+        const scrollContainer = document.getElementById("calcTabsScroll");
+        const btnLeft = document.querySelector(".calc-scroll-left");
+        const btnRight = document.querySelector(".calc-scroll-right");
+
+        function setTabStyles(tab, isActive) {
+          tab.classList.remove(
+            "border-purple-500/70",
+            "bg-white/90",
+            "ring-2",
+            "ring-purple-500/25",
+            "border-slate-200",
+            "bg-white/80"
+          );
+
+          if (isActive) {
+            tab.classList.add(
+              "border-purple-500/70",
+              "bg-white/90",
+              "ring-2",
+              "ring-purple-500/25"
+            );
+          } else {
+            tab.classList.add("border-slate-200", "bg-white/80");
+          }
+        }
+
+        function activateTab(targetId) {
+          panels.forEach((panel) => {
+            panel.classList.toggle("hidden", panel.id !== targetId);
+          });
+
+          tabs.forEach((tab) => {
+            const isActive = tab.dataset.tabTarget === targetId;
+            setTabStyles(tab, isActive);
+          });
+        }
+
+        tabs.forEach((tab) => {
+          tab.addEventListener("click", () => {
+            const targetId = tab.dataset.tabTarget;
+            if (targetId) activateTab(targetId);
+          });
+        });
+
+        // стрелки прокрутки
+        const scrollStep = 220; // ~ширина одной карточки + отступ
+
+        if (scrollContainer && btnLeft && btnRight) {
+          btnLeft.addEventListener("click", () => {
+            scrollContainer.scrollBy({
+              left: -scrollStep,
+              behavior: "smooth",
+            });
+          });
+
+          btnRight.addEventListener("click", () => {
+            scrollContainer.scrollBy({
+              left: scrollStep,
+              behavior: "smooth",
+            });
+          });
+        }
+
+        // Активируем первый таб по умолчанию
+        if (tabs.length > 0) {
+          activateTab(tabs[0].dataset.tabTarget);
+        }
+      });
+    </script>
+  </body>
+</html>
